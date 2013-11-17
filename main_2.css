@@ -1,0 +1,37 @@
+body{
+  text-align: center;
+}
+header, section, footer, aside, nav, article, hgroup{
+  display : block;
+}
+#skin{
+  width: 500px; /*of whole player jeg har ændret fra 700 i width til 600*/
+  margin: 10px auto; /*from top*/
+  padding: 5px;
+  background: red;
+  border: 4px solid black;
+  border-radius: 10px; /*rounded corners*/
+}
+nav{
+  margin: 5px 0px; /*control bar on bottom*/
+}
+#buttons{
+  float: left; 
+  width: 70px;
+  height: 22px;
+}
+#defaultBar{
+  position: relative;
+  float: left;
+  width: 480px; /*bar+button widths, dont make bigger than skin jeg har ændret fra 600px*/
+  height: 16px;
+  padding: 4px; /*progress bar will show up inside here*/
+  border: 2px solid black; /*border around bar*/
+  background: yellow; /*default color of bar*/
+}
+#progressBar{
+  position: absolute;
+  width: 0px; /*0 by defualt*/
+  height: 16px;
+  background: blue; /*color of the progress bar, size changes as video plays*/
+}
